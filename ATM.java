@@ -15,24 +15,32 @@ class Account
 	private double CB =2000;
 	private double SB =1000;
 	void setCostumerNumber(int a) 
-	{CN = a;}
+	{
+		CN = a;
+	}
 	void setPinNumber(int b)
-	{PN = b;}
+	{
+		PN = b;
+	}
 	int getCostumerNumber() 
-    {return CN;}
+   	{
+		return CN;
+	}
 	int getPinNumber()
-    {return PN;}
+    	{
+		return PN;
+	}
 	double getCurrentBalance()
 	{
 	 return CB;   
 	}
 	double getSavingBalance()
-    {
-     return SB;   
-    }
+   	{
+     	 return SB;   
+    	}
 	void getSavingWithdrawInput()
 	{
-	    System.out.println("Your Saving Account Balance is :"+ df.format(SB));
+	    System.out.println("Your saving account balance is :"+ df.format(SB));
 	    System.out.print("Please Enter the Amount You want to Withdraw : ");
 	    double amount= sc.nextDouble();
 	    
@@ -124,16 +132,16 @@ HashMap<Integer,Integer> hm=new HashMap<Integer,Integer>();
 DecimalFormat df = new DecimalFormat("'Rupee : '###,##0.00");
 
 void getLogin() 
-{
-    int x=1;
-do {
-    try
-    {
-               hm.put(11111,111);
-               hm.put(22222,222);
-               hm.put(33333,333);
-               hm.put(44444,444);
-               hm.put(55555,555);
+	{
+    	 int x=1;
+		do {
+    			try
+    			{
+              			 hm.put(11111,111);
+            			 hm.put(22222,222);
+               			 hm.put(33333,333);
+               			 hm.put(44444,444);
+              			 hm.put(55555,555);
                
                System.out.println("Welcome to MSBECL ATM" + "\n");
                System.out.println("Enter your Costumer Number");
@@ -154,7 +162,7 @@ do {
                }
                
                
-    }
+    		    }
     catch (InputMismatchException e) 
         {
            System.out.println(" \n Please only Enter only number.\n Character are not allowed");
@@ -204,7 +212,7 @@ void getCurrent()
 	    {
 	        case 1:
 	            System.out.println("Your Current Account Balance is: " + df.format(getCurrentBalance()) );
-	            getAccountType();// getCurrentBalance();
+	            getAccountType();
 	            break;
 	        case 2:
 	            getCurrentWithdrawInput();
