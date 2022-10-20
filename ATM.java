@@ -1,7 +1,11 @@
 package ATM_Package;
+
+//importing necesary packages
 import java.util.*;
 import java.text.*;
 
+
+//Account Class having all the classes
 class Account
 {	
     Scanner sc = new Scanner(System.in);
